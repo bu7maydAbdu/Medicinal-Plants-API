@@ -29,6 +29,7 @@ app.use(express.json())
 app.get('/',(request, response)=>{
     db.collection('plants').find().toArray()
     .then(data => {
+        console.log(data)
         response.render('index.ejs', { info: data })
     })
     .catch(error => console.error(error))
