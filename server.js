@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const cors = require("cors")
 const MongoClient = require('mongodb').MongoClient
-const PORT = 2121
+const PORT = 8000
 require('dotenv').config()
 
 
@@ -25,6 +25,25 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
 
+
+app.get('/',(request, response)=>{
+    db.collection('plants').find().toArray()
+    .then(data => {
+        response.render('index.ejs', { info: data })
+    })
+    .catch(error => console.error(error))
+})
+
+
+// app.post('/addPlant', (request, response) => {
+//     db.collection('plants').insertOne({plantName: request.body.plantName,
+//     mainIngredient: request.body.mainIngredient})
+//     .then(result => {
+//         console.log('plants Added')
+//         response.redirect('/')
+//     })
+//     .catch(error => console.error(error))
+// })
 
 
 
