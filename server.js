@@ -34,6 +34,17 @@ app.get('/',(request, response)=>{
     .catch(error => console.error(error))
 })
 
+app.get('/api', (request, response)=>{
+    db.collection('plants').find().toArray()
+    .then(data => {
+
+        response.json(data)
+        console.log(data)
+
+    })
+   
+})
+
 
 // app.post('/addPlant', (request, response) => {
 //     db.collection('plants').insertOne({plantName: request.body.plantName,
