@@ -50,10 +50,11 @@ app.get('/api', (request, response)=>{
 
 
 app.post('/addPlant', (request, response) => {
-    db.collection('rappers').insertOne({plantName: request.body.plantName,
+    db.collection('plants').insertOne({plantName: request.body.plantName,
     mainIngredient: request.body.mainIngredient, areaOfPlant: request.body.area, biologicalActivity: request.body.biologicalActivity})
     .then(result => {
         console.log('plant Added')
+        console.log(result)
         response.redirect('/')
     })
     .catch(error => console.error(error))
