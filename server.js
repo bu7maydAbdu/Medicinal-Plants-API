@@ -35,6 +35,8 @@ app.get('/',(request, response)=>{
     .catch(error => console.error(error))
 })
 
+
+
 app.get('/api', (request, response)=>{
     db.collection('plants').find().toArray()
     .then(data => {
@@ -47,15 +49,15 @@ app.get('/api', (request, response)=>{
 })
 
 
-// app.post('/addPlant', (request, response) => {
-//     db.collection('plants').insertOne({plantName: request.body.plantName,
-//     mainIngredient: request.body.mainIngredient})
-//     .then(result => {
-//         console.log('plants Added')
-//         response.redirect('/')
-//     })
-//     .catch(error => console.error(error))
-// })
+app.post('/addPlant', (request, response) => {
+    db.collection('rappers').insertOne({plantName: request.body.plantName,
+    mainIngredient: request.body.mainIngredient, areaOfPlant: request.body.area, biologicalActivity: request.body.biologicalActivity})
+    .then(result => {
+        console.log('plant Added')
+        response.redirect('/')
+    })
+    .catch(error => console.error(error))
+})
 
 
 
