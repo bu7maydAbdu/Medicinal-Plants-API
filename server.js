@@ -42,7 +42,6 @@ app.get('/api', (request, response)=>{
     .then(data => {
 
         response.json(data)
-        console.log(data)
 
     })
    
@@ -54,7 +53,6 @@ app.post('/addPlant', (request, response) => {
     mainIngredient: request.body.mainIngredient, areaOfPlant: request.body.area, biologicalActivity: request.body.biologicalActivity})
     .then(result => {
         console.log('plant Added')
-        console.log(result)
         response.redirect('/')
     })
     .catch(error => console.error(error))
