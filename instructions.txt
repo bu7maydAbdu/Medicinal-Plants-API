@@ -1,0 +1,5 @@
+every plant object should contain :
+*name of the plant
+* main active Ingredient 
+* area 
+* biological activity
