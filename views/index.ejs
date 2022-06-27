@@ -18,8 +18,30 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Medicinal plants</h1>
+
+    
+ 
+
+
+    
+
+    <form action="/addPlant" method="POST">
+        <h2>Add A Plant</h2>
+        <input type="text" placeholder="Plant Name" name="plantName">
+        <input type="text" placeholder="Family Name" name="FamilyName">
+        <input type="text" placeholder="Scientific Name" name="ScientificName">
+        <input type="text" placeholder="Main Ingredient" name="mainIngredient">
+        <input type="text" placeholder="area" name="area">
+        <input type="text" placeholder="Biological Activity/ies" name="biologicalActivity">
+        <input type="file" name="Image" id="">
+
+        <input type="submit" value="add plant">
+    </form>
+
+    
     <ul class="plants">
+        <h1>Medicinal plants </h1>
+        <span class="DataCounter">number of plants in the database: <%= info.length %></span>
     <% for(let i=0; i < info.length; i++) {%>
         <li class="plant">
             <span><%= info[i].plantName %></span>
@@ -28,17 +50,19 @@
         </li>
     <% } %>
     </ul>
+    
 
-    <h2>Add A Plant</h2>
+  
 
-    <form action="/addPlant" method="POST">
-        <input type="text" placeholder="Plant Name" name="plantName">
-        <input type="text" placeholder="Main Ingredient" name="mainIngredient">
-        <input type="text" placeholder="area" name="area">
-        <input type="text" placeholder="Biological Activity/ies" name="biologicalActivity">
 
-        <input type="submit" value="add plant">
-    </form>
+  
+  
+  
+
+
+    
+  
+
     
 
     <script src='js/main.js'></script>

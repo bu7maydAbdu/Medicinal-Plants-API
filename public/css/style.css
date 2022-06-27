@@ -1,0 +1,58 @@
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+   background: lightgreen;
+    color: white;
+}
+
+h1,h2, li, .DataCounter {
+    font-size: 2.7rem;
+}
+
+.plants {
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50%;
+    margin: 5px auto;
+    background: white;
+}
+
+
+
+form {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   border: 1px solid black;
+   border-radius: 10px;
+   width: 50%;
+   padding: 10px 10px;
+   color: black;
+   background: white;
+   margin: 5px auto;
+
+}
+
+
+input {
+    padding: 10px;
+    margin:10px 0;
+
+
+}
+input[type="submit"]{
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+
+@media all and (max-width: 532px) {
+    form, .plants {
+        width: 80%;
+    }
+}
