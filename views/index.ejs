@@ -47,6 +47,7 @@
     <% for(let i=0; i < info.length; i++) {%>
         <li class="plant">
             <span><%= info[i].plantName %> <span><%= info[i].plantArabicName %></span>
+            <ul>  
             <li>
                 <%= info[i].scientificName %>  
             </li>
@@ -63,6 +64,8 @@
             <li>
                 <%= info[i].biologicalActivity %>  
             </li>
+        </ul>
+         
         
         </span>
             
