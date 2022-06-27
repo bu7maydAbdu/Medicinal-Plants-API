@@ -49,7 +49,7 @@ app.get('/api', (request, response)=>{
 
 
 app.post('/addPlant', (request, response) => {
-    db.collection('plants').insertOne({plantName: request.body.plantName,
+    db.collection('plants').insertOne({plantName: request.body.plantName, plantArabicName: request.body.plantArabicName, familyName: request.body.familyName, scientificName: request.body.scientificName,
     mainIngredient: request.body.mainIngredient, areaOfPlant: request.body.area, biologicalActivity: request.body.biologicalActivity})
     .then(result => {
         console.log('plant Added')

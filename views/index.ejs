@@ -28,8 +28,9 @@
     <form action="/addPlant" method="POST">
         <h2>Add A Plant</h2>
         <input type="text" placeholder="Plant Name" name="plantName">
-        <input type="text" placeholder="Family Name" name="FamilyName">
-        <input type="text" placeholder="Scientific Name" name="ScientificName">
+        <input type="text" placeholder="Plant Arabic Name" name="plantArabicName">
+        <input type="text" placeholder="Family Name" name="familyName">
+        <input type="text" placeholder="Scientific Name" name="scientificName">
         <input type="text" placeholder="Main Ingredient" name="mainIngredient">
         <input type="text" placeholder="area" name="area">
         <input type="text" placeholder="Biological Activity/ies" name="biologicalActivity">
@@ -38,7 +39,7 @@
         <input type="submit" value="add plant">
     </form>
 
-    
+
     <ul class="plants">
         <h1>Medicinal plants </h1>
         <span class="DataCounter">number of plants in the database: <%= info.length %></span>
