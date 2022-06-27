@@ -20,6 +20,9 @@ h1,h2, li, .DataCounter {
     margin: 5px auto;
     background: white;
 }
+.plant {
+    width: 90%;
+}
 
 
 
@@ -54,5 +57,8 @@ input[type="submit"]{
 @media all and (max-width: 532px) {
     form, .plants {
         width: 80%;
+    }
+    h1,h2, li, .DataCounter {
+        font-size: 2.2rem;
     }
 }
