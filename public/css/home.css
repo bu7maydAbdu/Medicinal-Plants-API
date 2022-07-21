@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 100vh;
+    background-color: lightgreen;
+    border-radius: 0 0 500px 0;
+}
