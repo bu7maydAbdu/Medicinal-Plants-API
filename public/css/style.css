@@ -8,6 +8,23 @@ body {
     color: white;
 }
 
+ main {
+  display: flex; 
+  flex-direction: column;
+  /* justify-content: center; */
+  /* background-color: black; */
+ }
+ .main-admin {
+    display: flex; 
+     flex-direction: column;
+    /* background-color: white; */
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+ }
+
+
+
 h1,h2, li, .DataCounter {
     font-size: 2.7rem;
 }
@@ -16,9 +33,11 @@ h1,h2, li, .DataCounter {
     color: black;
     border: 1px solid black;
     border-radius: 10px;
-    width: 50%;
-    margin: 5px auto;
+    /* width: 50%; */
+    /* height: 100vh; */
+    /* margin: 5px 10px; */
     background: white;
+    /* grid-area: plantsData; */
 }
 .plant {
     width: 90%;
@@ -36,7 +55,8 @@ form {
    padding: 10px 10px;
    color: black;
    background: white;
-   margin: 5px auto;
+   /* margin: 5px 10px; */
+   /* grid-area: formArea; */
 
 }
 
@@ -53,6 +73,18 @@ input[type="submit"]{
 
 }
 
+.stats{
+    border: 1px solid black;
+   border-radius: 10px;
+   /* width: 50%; */
+   /* height: 200px; */
+   padding: 10px 10px;
+   color: black;
+   background: white;
+   /* margin: 5px auto; */
+    /* grid-area: stats; */
+}
+
 
 @media all and (max-width: 532px) {
     form, .plants {
@@ -61,4 +93,7 @@ input[type="submit"]{
     h1,h2, li, .DataCounter {
         font-size: 2.2rem;
     }
+    /* .main-admin{
+        flex-direction: column;
+    } */
 }

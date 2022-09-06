@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
     <!DOCTYPE html>
@@ -19,75 +19,69 @@
 </head>
 <body>
 
+<header>
+   <h1 class="logo">PlaMed <i class="fa-brands fa-pagelines"></i></h1>
+    <section class="searchBar">
+        <input type="text">
+        <input type="submit" value="search">
+    </section>
+   
+</header>
+
+<main>
+  
     
- 
+    <h1 class="subtitle">Medicinal plants </h1>
 
-
-    
-
-    <form action="/addPlant" method="POST">
-        <h2>Add A Plant</h2>
-        <input type="text" placeholder="Plant Name" name="plantName">
-        <input type="text" placeholder="Plant Arabic Name" name="plantArabicName">
-        <input type="text" placeholder="Family Name" name="familyName">
-        <input type="text" placeholder="Scientific Name" name="scientificName">
-        <input type="text" placeholder="Main Ingredient" name="mainIngredient">
-        <input type="text" placeholder="area" name="area">
-        <input type="text" placeholder="Biological Activity/ies" name="biologicalActivity">
-        <input type="file" name="Image" id="">
-
-        <input type="submit" value="add plant">
-    </form>
-
-
-    <ul class="plants">
-        <h1>Medicinal plants </h1>
-        <span class="DataCounter">number of plants in the database: <%= info.length %></span>
+    <section class="plants">
 
     <% for(let i=0; i < info.length; i++) {%>
-        <li class="plant">
-            <span><%= info[i].plantName %> <span><%= info[i].plantArabicName %></span>
-            <ul>  
-            <li>
+        <section class="plant-card">
+            <h2 class="plantName"><%= info[i].plantName %></h2>
+             <span><%= info[i].plantArabicName %></span>
+          <section class="card-info">
+            <span>
                 <%= info[i].scientificName %>  
-            </li>
-            <li>
+            </span>
+
+            <span>
                 <%= info[i].familyName %>  
-            </li>
+            </span>
           
-            <li>
+            <span>
                 <%= info[i].mainIngredient %>  
-            </li>
-            <li>
+            </span>
+            <span>
                 <%= info[i].areaOfPlant %>  
-            </li>
-            <li>
+            </span>
+            <span>
                 <%= info[i].biologicalActivity %>  
-            </li>
-        </ul>
+            </span>
+        
+          </section>
+
+          <section class="moreSection">
+            <button class="moreInfo">More
+            </button>
+          </section>
          
         
-        </span>
-            
-            
-        </li>
+
+        </section>
     <% } %>
-    </ul>
+    </section>
     
-
   
 
 
-  
-  
-  
-
-
-    
+    <footer>
+        
+    </footer>
   
 
     
 
-    <script src='js/main.js'></script>
+    <script src='../public/js/main.js'></script>
 </body>
+</html>
 </html>

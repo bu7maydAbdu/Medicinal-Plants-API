@@ -36,12 +36,22 @@ app.get('/',(request, response)=>{
     })
     .catch(error => console.error(error))
 })
-
-app.get('/home',(request, response)=>{
+app.get('/adminDashboard',(request, response)=>{
     db.collection('plants').find().toArray()
     .then(data => {
         console.log(data)
-        response.render('home.ejs', { info: data })
+        // response.sendFile(__dirname, "/test.html")
+        response.render('submit.ejs', { info: data })
+    })
+    .catch(error => console.error(error))
+})
+
+app.get('/plantPage',(request, response)=>{
+    db.collection('plants').find().toArray()
+    .then(data => {
+        console.log(data)
+        // response.sendFile(__dirname, "/test.html")
+        response.render('page.ejs', { info: data })
     })
     .catch(error => console.error(error))
 })
@@ -63,7 +73,7 @@ app.post('/addPlant', (request, response) => {
     mainIngredient: request.body.mainIngredient,partUsed: request.body.partUsed, areaOfPlant: request.body.area, biologicalActivity: request.body.biologicalActivity, plantImage: request.body.plantImage})
     .then(result => {
         console.log('plant Added')
-        response.redirect('/')
+        response.redirect('/adminDashboard')
     })
     .catch(error => console.error(error))
 })
