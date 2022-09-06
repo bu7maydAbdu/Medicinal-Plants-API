@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Parisienne&family=Passion+One&family=Press+Start+2P&family=Roboto&family=Russo+One&display=swap');* {
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Parisienne&family=Passion+One&family=Press+Start+2P&family=Roboto&family=Russo+One&display=swap');
+*, *::before, *::after { 
     margin: 0;
     padding: 0;
+
 }
+    
 
 header {
     position: relative;
