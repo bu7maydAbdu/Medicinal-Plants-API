@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
     <!DOCTYPE html>
@@ -21,12 +21,12 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="/adminLoggingIn" method="POST">
+        <h1>Admin Login</h1>
 
-    <form action="/adminLogin" method="POST">
-           
-        <input type="text" name="adminName" id="adminName">
-        <input type="email" name="adminEmail" id="adminEmail">
-        <input type="password" name="password" id="adminPassword">
+        <input type="text" placeholder="Name" name="adminName" id="adminName">
+        <input type="email" placeholder="Email" name="adminEmail" id="adminEmail">
+        <input type="password" placeholder="password" name="password" id="adminPassword">
 
         <input type="submit" value="add plant">
     </form>

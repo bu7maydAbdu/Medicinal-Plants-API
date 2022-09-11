@@ -39,27 +39,27 @@
 
     <ul class="plants">
         <h1>Medicinal plants </h1>
-        <span class="DataCounter">number of plants in the database: <%= info.length %></span>
+        <span class="DataCounter">number of plants in the database: <%= plants.length %></span>
 
-    <% for(let i=0; i < info.length; i++) {%>
+    <% for(let i=0; i < plants.length; i++) {%>
         <li class="plant">
-            <span><%= info[i].plantName %> <span><%= info[i].plantArabicName %></span>
+            <span><%= plants[i].plantName %> <span><%= plants[i].plantArabicName %></span>
             <ul>  
             <li>
-                <%= info[i].scientificName %>  
+                <%= plants[i].scientificName %>  
             </li>
             <li>
-                <%= info[i].familyName %>  
+                <%= plants[i].familyName %>  
             </li>
           
             <li>
-                <%= info[i].mainIngredient %>  
+                <%= plants[i].mainIngredient %>  
             </li>
             <li>
-                <%= info[i].areaOfPlant %>  
+                <%= plants[i].areaOfPlant %>  
             </li>
             <li>
-                <%= info[i].biologicalActivity %>  
+                <%= plants[i].biologicalActivity %>  
             </li>
         </ul>
          

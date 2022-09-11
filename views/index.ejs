@@ -35,27 +35,27 @@
 
     <section class="plants">
 
-    <% for(let i=0; i < info.length; i++) {%>
+    <% for(let i=0; i < plants.length; i++) {%>
         <section class="plant-card">
-            <h2 class="plantName"><%= info[i].plantName %></h2>
-             <span><%= info[i].plantArabicName %></span>
+            <h2 class="plantName"><%= plants[i].plantName %></h2>
+             <span><%= plants[i].plantArabicName %></span>
           <section class="card-info">
             <span>
-                <%= info[i].scientificName %>  
+                <%= plants[i].scientificName %>  
             </span>
 
             <span>
-                <%= info[i].familyName %>  
+                <%= plants[i].familyName %>  
             </span>
           
             <span>
-                <%= info[i].mainIngredient %>  
+                <%= plants[i].mainIngredient %>  
             </span>
             <span>
-                <%= info[i].areaOfPlant %>  
+                <%= plants[i].areaOfPlant %>  
             </span>
             <span>
-                <%= info[i].biologicalActivity %>  
+                <%= plants[i].biologicalActivity %>  
             </span>
         
           </section>

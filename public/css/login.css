@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Parisienne&family=Passion+One&family=Press+Start+2P&family=Roboto&family=Russo+One&display=swap');
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: lightgreen;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+}
+h1 {
+    color: lightgreen;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+form {
+    /* border: 1px solid black; */
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+input {
+    padding: 20px;
+    border-radius: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+input[type = text] , 
+input[type = email], 
+input[type = password]  {
+    width: 100%;
+}
