@@ -1,5 +1,6 @@
 const express = require('express')
 const cors = require("cors")
+const PORT = 8000
 const mongoose = require("mongoose")
 require('dotenv').config({path: './config/.env'})
 const main = require("./routes/mainRouter")

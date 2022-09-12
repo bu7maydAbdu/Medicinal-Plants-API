@@ -9,6 +9,7 @@
 header {
     position: relative;
     height: 80vh;
+    width: 100vw;
     background-color: lightgreen;
     border-radius: 0 0 500px 0;
     display: flex;
@@ -41,12 +42,12 @@ input[type = submit]:hover {
     background-color: lightgreen;
     color: white;
 }
-video {
+/* video {
     position: absolute;
     width: 100vw;
     height: 100vh;
 
-}
+} */
 
 .logo {
     position: absolute;
@@ -163,4 +164,91 @@ footer {
     border-radius: 500px 0 0 0;
 }
 
+
+@media all and (max-width: 1421px) {
+    .plants {
+        grid-column-gap: 150px;
+    }
+}
+
+@media all and (max-width: 1237px) {
+    .plants{
+        grid-column-gap: 100px;
+
+    }
+}
+
+@media all and (max-width: 1141px) {
+    .plants {
+  grid-template-columns: 1fr 1fr ;
+
+    }
+}
+
+
+@media all and (max-width: 800px) {
+    .plants{
+        grid-column-gap: 50px;
+
+    }
+}
+
+@media all and (max-width: 724px) {
+    .plants {
+        grid-template-columns: 1fr  ;
+      
+          }
+          
+input[type = text]{
+    width: 350px;
+}
+}
+
+@media all and (max-width: 600px) {
+    input[type = text]{
+        width: 250px;
+    }
+}
+
+
+@media all and (max-width: 464px) {
+    input[type = text]{
+        width: 200px;
+    }
+}
+
+@media all and (max-width: 404px) {
+    .logo {
+        font-weight: 700;
+        font-size: 60px;
+        padding: 10px;
+    }
+}
+
+
+@media all and (max-width: 362px) {
+    input[type = text]{
+        width: 150px;
+    }
+}
+
+
+@media all and (max-width: 322px) {
+    .plant-card , .moreSection{
+        width: 250px;
+        
+    }
+    .logo {
+        font-weight: 700;
+        font-size: 50px;
+        padding: 10px;
+    }
+}
+
+
+@media all and (max-width: 306px) {
+    input[type = text]{
+        width: 100px;
+    }
+}
 
