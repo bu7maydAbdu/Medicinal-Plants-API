@@ -37,6 +37,17 @@
     </form>
 
 
+    <form action="/adminSignUp" method="POST">
+        <h1>Admin Login</h1>
+
+        <input type="text" placeholder="Name" name="adminName" id="adminName">
+        <input type="email" placeholder="Email" name="adminEmail" id="adminEmail">
+        <input type="password" placeholder="password" name="password" id="adminPassword">
+        <input type="password" name="confirmPassword" placeholder="Confirm Password">
+        <input type="submit" value="add plant">
+    </form>
+
+
     <ul class="plants">
         <h1>Medicinal plants </h1>
         <span class="DataCounter">number of plants in the database: <%= plants.length %></span>

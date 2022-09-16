@@ -16,7 +16,7 @@ adminLoginPage : async (request, response) => {
       response.render("adminLogin.ejs")
 }, 
 
-adminLoggingIn : async (request, response) => {
+dasboardPage: async (request, response) => {
       const plants = await Plant.find()
       response.render("dashboard.ejs", { plants: plants })
 }
