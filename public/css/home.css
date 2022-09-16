@@ -4,12 +4,19 @@
     padding: 0;
 
 }
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 99.14vw;
+}
     
 
 header {
     position: relative;
     height: 80vh;
-    width: 100vw;
+    width: 100%;
     background-color: lightgreen;
     border-radius: 0 0 500px 0;
     display: flex;

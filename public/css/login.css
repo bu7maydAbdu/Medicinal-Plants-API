@@ -54,3 +54,19 @@ input[type = password]  {
     font-family: "Roboto";
     font-size: 1.5rem;
 }
+
+
+@media all and (max-width: 572px) {
+    form {
+        max-width: 80vw;
+        
+    } 
+ 
+}
+
+@media all and (max-width: 236px) {
+    h1 {
+padding: 3px;   
+ }
+}
+
