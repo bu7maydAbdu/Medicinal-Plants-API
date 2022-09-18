@@ -56,7 +56,7 @@ module.exports = {
     
                     })
 
-                    console.log("Post has been added!");
+                    console.log("Plant has been added!");
       response.redirect(`/${process.env.dashboard}`);
 
         }catch(err){
@@ -67,10 +67,10 @@ module.exports = {
     }, 
     searchPlantByName : async (request, response) => {
       try {
-        console.log(request.body)
+        // console.log(request.body)
 
 const plantSearched = await Plant.find({plantName : request.body.searchedPlant})
-console.log(plantSearched)
+// console.log(plantSearched)
 response.render("searchPage.ejs", {plant : plantSearched, filteredBy : request.body.searchedPlant})
 
 
@@ -83,9 +83,9 @@ response.render("searchPage.ejs", {plant : plantSearched, filteredBy : request.b
 
     getPlant : async (request, response) => {
         try {
-             console.log(request.params)
+            //  console.log(request.params)
             const plant = await Plant.findById({_id : request.params.id})
-            console.log(plant.plantName)
+            // console.log(plant.plantName)
             response.render("plantPage.ejs", {plant : plant})
 
         }catch(err){

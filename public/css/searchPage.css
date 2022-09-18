@@ -133,10 +133,23 @@ input[type = submit]:hover {
 
 .moreSection {
     position: relative;
-    background-color: rgba(255, 255, 255, 0.461);
+    background-color: rgba(255, 255, 255, 0);
     width: 300px;
     border-radius: 0 0 20px 20px ;
     z-index: 1000;
+}
+
+.moreSection button {
+    background-color: white;
+    color: rgb(38, 227, 38);
+    border: none;
+    border-radius: 10px 10px 0 0;
+    font-family: "Roboto";
+    font-size: 20px;
+}
+
+.moreSection button:hover {
+    cursor: pointer;
 }
 
 
