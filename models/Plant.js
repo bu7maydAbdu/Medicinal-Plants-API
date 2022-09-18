@@ -20,10 +20,14 @@ const plantSchema = new mongoose.Schema({
     biologicalActivity : {
         type : String
     }, 
-    plantImage : {
-        type : String
-    }
-
+    image: {
+        type: String,
+        require: true,
+      },
+      cloudinaryId: {
+        type: String,
+        require: true,
+      }
 })
 
 module.exports = mongoose.model("Plant", plantSchema)

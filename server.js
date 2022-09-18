@@ -5,10 +5,12 @@ const mongoose = require("mongoose")
 const passport = require('passport')
 const session = require('express-session')
 const MongoStore = require('connect-mongo')
+const methodOverride = require("method-override")
 const flash = require('express-flash')
+const multer  = require('multer')
 require('dotenv').config({path: './config/.env'})
 const main = require("./routes/mainRouter")
-// const plants = require("./routes/plantsRoute")
+const plantsRoute = require("./routes/plantsRoute")
 const connectDB = require("./config/database")
 
 require('./config/passport')(passport)
@@ -25,6 +27,12 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
+
+//Use forms for put / delete
+app.use(methodOverride("_method"));
+
+
+
 // Sessions
 app.use(
     session({
@@ -48,6 +56,7 @@ app.use(flash())
 
 
 app.use("/", main)
+app.use("/plants", plantsRoute)
 // app.use("/addPlant", plants )
 
 

@@ -22,8 +22,12 @@
 <header>
    <h1 class="logo">PlaMed <i class="fa-brands fa-pagelines"></i></h1>
     <section class="searchBar">
-        <input type="text">
+        <form action="/plants/searchPlantByName" method="POST">
+             
+            <input type="text" placeholder="search for a plant here..." name="searchedPlant">
         <input type="submit" value="search">
+
+        </form>
     </section>
    
 </header>
@@ -40,29 +44,16 @@
             <h2 class="plantName"><%= plants[i].plantName %></h2>
              <span><%= plants[i].plantArabicName %></span>
           <section class="card-info">
-            <span>
-                <%= plants[i].scientificName %>  
-            </span>
-
-            <span>
-                <%= plants[i].familyName %>  
-            </span>
-          
-            <span>
-                <%= plants[i].mainIngredient %>  
-            </span>
-            <span>
-                <%= plants[i].areaOfPlant %>  
-            </span>
-            <span>
-                <%= plants[i].biologicalActivity %>  
-            </span>
-        
+         
+                <img class="small-image" src="<%= plants[i].image %>  " alt="">
           </section>
 
           <section class="moreSection">
-            <button class="moreInfo">More
-            </button>
+            <a href="/plants/<%= plants[i]._id %>">
+                <button class="moreInfo">More
+                </button>
+            </a>
+            
           </section>
          
         

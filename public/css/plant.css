@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Parisienne&family=Passion+One&family=Press+Start+2P&family=Roboto&family=Russo+One&display=swap');
+
+
+
+
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+    background-color: black;
+    font-family: "Roboto";
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.plant-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    width: 800px;
+    height: 80vh;
+    background: rgba(15, 1, 1, 0.54);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+       
+        /* border: 3px solid lightgreen; */
+        text-align: center;
+        word-wrap: break-word;  
+        padding: 10px;    
+        line-height: 1.5;
+}
+h1 {
+color: lightgreen;
+font-size: 2rem;
+}
+.card-info {
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+    width: 90%;
+    height: 90%;
+    /* background-color: white; */
+    border-radius: 20px;
+}
+.plant-characteristics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: space-around; */
+    z-index: 1000;
+    /* border: 1px solid black; */
+    padding: 20px 0;
+    font-weight: bold;
+}
+.plant-chara-span {
+justify-self: start;
+width: fit-content;
+color: lightgreen;
+}
+
+
+.charac-text {
+
+    justify-self: start;
+    /* border: 1px solid black; */
+    width: 80%;
+    color: white;
+}
+.hr-line {
+    border-top: 1px solid rgba(144, 238, 144, 0.221);
+    border-bottom: 1px solid rgba(15, 1, 1, 0.46) ;
+    justify-self: center;
+}
+.plant-image {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+    opacity: 0.5;
+}
+
+
+@media all and (max-width: 867px) {
+
+    .plant-section {
+        width: 80vw;
+    }
+    
+}

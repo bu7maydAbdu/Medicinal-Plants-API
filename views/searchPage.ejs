@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaMed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/searchPage.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaMed</title>
+</head>
+<body>
+
+<!-- <header>
+   <h1 class="logo">PlaMed <i class="fa-brands fa-pagelines"></i></h1>
+    <section class="searchBar">
+        <form action="/plants/searchPlantByName" method="POST">
+             
+            <input type="text" placeholder="search for a plant here..." name="searchedPlant">
+        <input type="submit" value="search">
+
+        </form>
+    </section>
+   
+</header> -->
+
+
+
+  
+    <header>
+        <h1 class="logo">PlaMed <i class="fa-brands fa-pagelines"></i></h1>
+
+        <h3 class="subtitle">results for: <%= filteredBy %> </h3>
+
+    <section class="searchBar">
+        <form action="/plants/searchPlantByName" method="POST">
+             
+            <input type="text" placeholder="search for a plant here..." name="searchedPlant">
+        <input type="submit" value="search">
+
+        </form>
+    </section>
+        
+    </header>
+
+
+        <section class="plants">
+
+            <% for(let i=0; i < plant.length; i++) {%>
+                <section class="plant-card">
+                    <h2 class="plantName"><%= plant[i].plantName %></h2>
+                     <!-- <span><%= plant[i].plantArabicName %></span> -->
+                  <section class="card-info">
+                 
+                        <img class="small-image" src="<%= plant[i].image %>  " alt="">
+                  </section>
+        
+                  <section class="moreSection">
+                    <a class="morelink" href="/plants/<%= plant[i]._id %>">
+                        <button class="moreInfo">More
+                        </button>
+                    </a>
+                    
+                  </section>
+                 
+                </section>
+            <% } %>
+            </section>
+
+    
+    
+    
+  
+
+
+    <footer>
+        
+    </footer>
+  
+
+    
+
+    <script src='../public/js/main.js'></script>
+</body>
+</html>
+</html>

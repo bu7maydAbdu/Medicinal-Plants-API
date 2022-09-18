@@ -1,42 +1,38 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Parisienne&family=Passion+One&family=Press+Start+2P&family=Roboto&family=Russo+One&display=swap');
-*, *::before, *::after { 
+
+*, 
+*::before, 
+*::after {
     margin: 0;
     padding: 0;
-
 }
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    width: 99.14vw;
-}
-    
 
 header {
-    position: relative;
-    height: 80vh;
-    width: 100%;
-    background-color: lightgreen;
-    border-radius: 0 0 500px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    background-color: lightgreen;
+    padding:10px;
+    color: white;
 }
-
-
+.logo {
+    
+    font-family: 'Parisienne', cursive;
+   
+}
 input[type = text] {
-    padding: 20px;
-    width: 500px;
+    padding:5px;
+    width: 200px;
     border-radius: 20px;
     border: 1px solid rgb(0, 255, 0);
     box-shadow:  0 0 12px rgb(4, 139, 4);
     outline: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 input[type = submit] {
     color: rgb(41, 234, 41);
-    padding: 20px;
+    padding: 5px;
     border-radius: 20px;
     border: 2px solid lightgreen;
     box-shadow:  0 0 12px rgb(4, 139, 4);
@@ -49,57 +45,26 @@ input[type = submit]:hover {
     background-color: lightgreen;
     color: white;
 }
-/* video {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
 
-} */
-
-.logo {
-    position: absolute;
-    border: none;
-    border-radius: 0 0 100px 0;
-    top: 0;
-    left: 0;
-    font-family: 'Parisienne', cursive;
-    font-weight: 700;
-    font-size: 80px;
-    color: lightgreen;
-    padding: 10px;
-    background-color: white;
-}
-
-main {
-    margin-top: 100px;
-    text-align: center;
-}
-.subtitle {
-    margin-top: -50px;
-    margin-bottom: 50px;
-    font-family: "Roboto";
-    font-weight: bold;
-    font-size: 3rem;
-    color: rgb(119, 234, 119);
-}
 .plants {
-  /* border: 1px solid black;   */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
-  align-items: center;
-  width: fit-content;
-     /* background-color: grey; */
-     height: 1300px;
-     overflow-y: scroll;
-     margin: auto;
-     /* padding-right: 0px; */
-     
-     grid-column-gap: 250px;
-     grid-row-gap: 100px;
-     scrollbar-width: thin;
-    scrollbar-color: #2ae424 #f5f5f5;
-    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    /* align-items: center; */
+    width: fit-content;
+       /* background-color: grey; */
+       height: 1300px;
+       overflow-y: scroll;
+       margin: auto;
+       /* padding-right: 0px; */
+       
+       grid-column-gap: 250px;
+       grid-row-gap: 100px;
+       scrollbar-width: thin;
+      scrollbar-color: #2ae424 #f5f5f5;
+      padding: 10px;
+
 }
+
 .plants::-webkit-scrollbar {
     width: 2px;
     background-color: transparent;
@@ -119,8 +84,6 @@ main {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-
-
 
 /* plant carde below */
 .plant-card {
@@ -176,9 +139,15 @@ main {
     z-index: 1000;
 }
 
+
+
 .moreInfo {
+    position: relative;
+    
+    left: 25%;
     width: 50%;
     padding: 10px;
+    margin: 0 auto;
 }
 
 
@@ -189,6 +158,9 @@ footer {
     border-radius: 500px 0 0 0;
 }
 
+
+
+/* 
 
 @media all and (max-width: 1421px) {
     .plants {
@@ -225,37 +197,40 @@ footer {
           }
           
 input[type = text]{
-    width: 350px;
+    width: 100px;
 }
 }
 
 @media all and (max-width: 600px) {
+   h3 {
+       font-size: 0.8rem;
+   }
+   .logo {
+    font-size: 0.9rem;
+   }
+}
+
+@media all and (max-width: 535px) {
     input[type = text]{
-        width: 250px;
+        padding: 3px;
+        font-size: 10px;
+    }
+    input[type = submit] {
+        width: 50px;
+        padding: 3px;
+        font-size: 10px;
     }
 }
 
 
-@media all and (max-width: 464px) {
-    input[type = text]{
-        width: 200px;
-    }
-}
-
-@media all and (max-width: 404px) {
-    .logo {
-        font-weight: 700;
-        font-size: 60px;
-        padding: 10px;
+@media all and (max-width: 350px) {
+    .logo, h3 {
+        font-size: 0.7rem;
     }
 }
 
 
-@media all and (max-width: 362px) {
-    input[type = text]{
-        width: 150px;
-    }
-}
+
 
 
 @media all and (max-width: 322px) {
@@ -263,17 +238,13 @@ input[type = text]{
         width: 250px;
         
     }
-    .logo {
-        font-weight: 700;
-        font-size: 50px;
-        padding: 10px;
-    }
+
 }
 
 
 @media all and (max-width: 306px) {
     input[type = text]{
-        width: 100px;
+        width: 80px;
     }
 }
-
+ */

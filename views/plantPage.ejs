@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaMed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/plant.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaMed</title>
+</head>
+<body>
+
+
+
+          <main>
+
+            <section class="plant-section">
+                <h1 class="plantName"> <%= plant.plantName %></h1>
+
+                <!-- <span><%= plant.plantArabicName %></span> -->
+                <section class="card-info">
+                  <section class="plant-characteristics">
+                     <span class="plant-chara-span">Scientific Name :</span>  <p class="charac-text"><%= plant.scientificName %> </p>  
+                  </section class="plant-characteristics">
+                                  <hr class="hr-line">
+                  <section class="plant-characteristics">
+                      <span class="plant-chara-span">Family Name :</span>    <p class="charac-text"><%= plant.familyName %>  </p>  
+                  </section class="plant-characteristics">
+                                      <hr class="hr-line">
+                  <section class="plant-characteristics">
+                    <span class="plant-chara-span">Active Ingredient : </span> <p class="charac-text"><%= plant.mainIngredient %>  </p> 
+                  </section class="plant-characteristics">
+                                     <hr class="hr-line">
+                  <section class="plant-characteristics">
+                     <span class="plant-chara-span">Area Of Growth :</span> <p class="charac-text"><%= plant.areaOfPlant %>  </p> 
+                  </section class="plant-characteristics">
+                                      <hr class="hr-line">
+                  <section class="plant-characteristics">
+                   <span class="plant-chara-span"> Biological Activity : </span> <p class="charac-text"><%= plant.biologicalActivity %>  </p> 
+                  </section class="plant-characteristics">
+      
+              
+               
+              
+      
+              </section>
+
+            </section>
+            
+
+          </main>
+
+           
+          <img class="plant-image" src="<%= plant.image %>  " alt=""> 
+   
+
+    
+  
+
+
+    
+  
+
+    
+
+    <script src='../public/js/main.js'></script>
+</body>
+</html>
+</html>
