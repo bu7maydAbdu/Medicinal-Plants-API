@@ -39,7 +39,7 @@ module.exports = {
 
         try {
 
-            const result = await cloudinary.uploader.upload(request.file.path);
+            // const result = await cloudinary.uploader.upload(request.file.path);
 
             await Plant.create({
                 
@@ -49,9 +49,8 @@ module.exports = {
                      mainIngredient: request.body.mainIngredient,
                      partUsed: request.body.partUsed, areaOfPlant: request.body.area,
                       biologicalActivity: request.body.biologicalActivity,
-                       plantImage: request.body.plantImage,
-                         image: result.secure_url,
-                     cloudinaryId: result.public_id
+                        //  image: result.secure_url,
+                    //  cloudinaryId: result.public_id
     
                     })
 
