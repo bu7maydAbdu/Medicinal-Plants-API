@@ -44,7 +44,6 @@ module.exports = {
             await Plant.create({
                 
                 plantName: request.body.plantName,
-                 plantArabicName: request.body.plantArabicName, 
                  familyName: request.body.familyName,
                   scientificName: request.body.scientificName,
                      mainIngredient: request.body.mainIngredient,
