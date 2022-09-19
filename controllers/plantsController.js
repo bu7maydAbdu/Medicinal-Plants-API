@@ -83,6 +83,7 @@ deletePlant : async (request, response) => {
 
                 let plant = await Plant.findById({ _id: request.params.id });
                 console.log("plant found")
+                console.log(plant)
       // Delete image from cloudinary
       await cloudinary.uploader.destroy(plant.cloudinaryId);
       console.log("destroyed")
