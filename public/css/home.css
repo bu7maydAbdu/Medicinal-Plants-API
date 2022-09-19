@@ -222,11 +222,23 @@ main {
 
 
 footer {
+    display: grid;
     height: 500px;
     background-color: lightgreen;
     margin-top: 100px;
     border-radius: 500px 0 0 0;
 }
+
+.copyright {
+    align-self: end;
+    font-family: "Roboto";
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
 
 
 @media all and (max-width: 1421px) {

@@ -46,6 +46,12 @@ input[type = submit]:hover {
     color: white;
 }
 
+.resultsfound {
+    position: absolute;
+    font-family: "Roboto";
+    color: lightgreen;
+}
+
 .plants {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
@@ -129,6 +135,7 @@ input[type = submit]:hover {
  padding: 10px;
  border-radius: 20px 20px 0 0;
  z-index: 1000;
+ text-align: center;
 }
 
 .moreSection {
@@ -165,15 +172,27 @@ input[type = submit]:hover {
 
 
 footer {
+    display: grid;
     height: 500px;
     background-color: lightgreen;
     margin-top: 100px;
     border-radius: 500px 0 0 0;
 }
 
+.copyright {
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    align-self: end;
+    justify-self: center;
+    font-family: "Roboto";
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: 0.8;
+}
 
 
-/* 
 
 @media all and (max-width: 1421px) {
     .plants {
@@ -260,4 +279,4 @@ input[type = text]{
         width: 80px;
     }
 }
- */
+
