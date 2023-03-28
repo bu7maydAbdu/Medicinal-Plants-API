@@ -95,8 +95,8 @@ main {
      /* padding-right: 0px; */
      
      grid-column-gap: 250px;
-     grid-row-gap: 100px;
-     scrollbar-width: auto ;
+     /* grid-row-gap: 100px; */
+     /* scrollbar-width: auto ; */
     scrollbar-color: #2ae424 #f5f5f5;
     padding: 10px;
 }

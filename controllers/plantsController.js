@@ -24,7 +24,8 @@ module.exports = {
     addPlant : async (request, response) => {
 
         try {
-
+            console.log(request.body)
+        //    console.log(request.file.path) 
             const result = await cloudinary.uploader.upload(request.file.path);
 
             await Plant.create({
